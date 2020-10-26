@@ -1,0 +1,5 @@
+<div class="inbox_chat">
+    <div *ngFor="let room of rooms" class="chat_list" (click)="click(room)">
+      <room [room]="room"></room>
+    </div>
+</div>

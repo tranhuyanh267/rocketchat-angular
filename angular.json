@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rocketchat-angular"
+    }
+  },
+  "defaultProject": "rocketchat-angular",
+  "cli": {
+    "analytics": "0b839ba7-e724-45bd-927c-a0d5f7cbc1f3"
+  }
 }
