@@ -10,9 +10,9 @@ export class RestApi {
     constructor(@Inject(REST_URL_TOKEN) restUrl: string, private httpClient: HttpClient) {}
 
     getRooms(): Observable<any> {
-        return this.httpClient.get("http://chat.internal.xomad.com/api/v1/rooms.get", {
+        return this.httpClient.get("http://192.168.10.116:3000/api/v1/rooms.get", {
             headers: {
-                "X-Auth-Token": "AEkglIGCQ391e8yZbHMt60b-PWUyWrLhfioljzQHOPK",
+                "X-Auth-Token": "CBYtuflLgWcodT35MgGwYB3NJ--I_uDR-9NNT_7_ZZS",
                 "X-User-Id": "bSeDvqRCqdbgvy7ya"
             },
 
@@ -24,9 +24,9 @@ export class RestApi {
 
     usersList(search: string): Observable<User[]> {
         const query = { "username": { "$regex": search } }
-        return this.httpClient.get(`http://chat.internal.xomad.com/api/v1/users.list?query=${JSON.stringify(query)}`, {
+        return this.httpClient.get(`http://192.168.10.116:3000/api/v1/users.list?query=${JSON.stringify(query)}`, {
             headers: {
-                "X-Auth-Token": "AEkglIGCQ391e8yZbHMt60b-PWUyWrLhfioljzQHOPK",
+                "X-Auth-Token": "CBYtuflLgWcodT35MgGwYB3NJ--I_uDR-9NNT_7_ZZS",
                 "X-User-Id": "bSeDvqRCqdbgvy7ya"
             },
 
@@ -47,9 +47,9 @@ export class RestApi {
     }
 
     usersInfo(userId: string): Observable<User> {
-        return this.httpClient.get(`http://chat.internal.xomad.com/api/v1/users.info?userId=${userId}`, {
+        return this.httpClient.get(`http://192.168.10.116:3000/api/v1/users.info?userId=${userId}`, {
             headers: {
-                "X-Auth-Token": "AEkglIGCQ391e8yZbHMt60b-PWUyWrLhfioljzQHOPK",
+                "X-Auth-Token": "CBYtuflLgWcodT35MgGwYB3NJ--I_uDR-9NNT_7_ZZS",
                 "X-User-Id": "bSeDvqRCqdbgvy7ya"
             },
 
