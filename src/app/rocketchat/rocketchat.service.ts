@@ -23,7 +23,7 @@ export class RocketChatService {
 
     getCurrentUser() {
         return  {
-            _id: "AhCBfAGTbyYz5hFme",
+            _id: "bSeDvqRCqdbgvy7ya",
             name: "Admin",
             username: "admin"
         }

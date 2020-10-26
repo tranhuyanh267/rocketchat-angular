@@ -12,8 +12,8 @@ export class RestApi {
     getRooms(): Observable<any> {
         return this.httpClient.get("http://chat.internal.xomad.com/api/v1/rooms.get", {
             headers: {
-                "X-Auth-Token": "jo-1kCDNCPF9tAECuKRFmuOYRUJKuxlPJnHpYfVLj9s",
-                "X-User-Id": "AhCBfAGTbyYz5hFme"
+                "X-Auth-Token": "AEkglIGCQ391e8yZbHMt60b-PWUyWrLhfioljzQHOPK",
+                "X-User-Id": "bSeDvqRCqdbgvy7ya"
             },
 
             observe: 'body',
@@ -26,8 +26,8 @@ export class RestApi {
         const query = { "username": { "$regex": search } }
         return this.httpClient.get(`http://chat.internal.xomad.com/api/v1/users.list?query=${JSON.stringify(query)}`, {
             headers: {
-                "X-Auth-Token": "jo-1kCDNCPF9tAECuKRFmuOYRUJKuxlPJnHpYfVLj9s",
-                "X-User-Id": "AhCBfAGTbyYz5hFme"
+                "X-Auth-Token": "AEkglIGCQ391e8yZbHMt60b-PWUyWrLhfioljzQHOPK",
+                "X-User-Id": "bSeDvqRCqdbgvy7ya"
             },
 
             observe: 'body',
@@ -49,8 +49,8 @@ export class RestApi {
     usersInfo(userId: string): Observable<User> {
         return this.httpClient.get(`http://chat.internal.xomad.com/api/v1/users.info?userId=${userId}`, {
             headers: {
-                "X-Auth-Token": "jo-1kCDNCPF9tAECuKRFmuOYRUJKuxlPJnHpYfVLj9s",
-                "X-User-Id": "AhCBfAGTbyYz5hFme"
+                "X-Auth-Token": "AEkglIGCQ391e8yZbHMt60b-PWUyWrLhfioljzQHOPK",
+                "X-User-Id": "bSeDvqRCqdbgvy7ya"
             },
 
             observe: 'body',

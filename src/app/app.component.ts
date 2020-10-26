@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
   }
 
   testRealtimeAPI() {
-    this.rocketChatService.connectToServerWithToken("jo-1kCDNCPF9tAECuKRFmuOYRUJKuxlPJnHpYfVLj9s")
+    this.rocketChatService.connectToServerWithToken("AEkglIGCQ391e8yZbHMt60b-PWUyWrLhfioljzQHOPK")
 
     // this.rocketChatService.listenToRoom("jru7W3JqektmC6hi2pNstB5NbBRyBhuGan").subscribe(data => {
     //     if (data.fields.args) {
